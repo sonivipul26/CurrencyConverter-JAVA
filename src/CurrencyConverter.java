@@ -1,5 +1,8 @@
 import javax.swing.*;
 import javax.swing.border.*;
+
+import org.w3c.dom.events.MouseEvent;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.geom.*;
@@ -493,7 +496,7 @@ public class CurrencyConverter extends JFrame implements ActionListener {
 
             convertButton.setEnabled(false);
             convertButton.setText("Converting...");
-            statusLabel.setText("⏳ Fetching live exchange rate...");
+            statusLabel.setText("Fetching live exchange rate...");
             statusLabel.setForeground(TEXT_SECONDARY);
 
             // Call the API through CurrencyService
